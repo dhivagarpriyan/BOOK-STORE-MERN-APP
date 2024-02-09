@@ -27,6 +27,9 @@ app.use(express.json());
 app.use(cors({
     origin:"https://book-store-mern-app-tau.vercel.app",
     methods:["GET","POST","DELETE"],
+    headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
     allowedHeaders:["content-type"]
 }));
 
