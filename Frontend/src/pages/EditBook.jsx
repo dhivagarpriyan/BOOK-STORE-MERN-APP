@@ -37,7 +37,7 @@ const EditBook = () => {
       PublishYear
     };
     setLoading(true)
-    axios.put(`http://localhost:4000/books/${id}`,data)
+    axios.put(`http://https://book-store-mern-app-tau.vercel.app/books/${id}`,data)
     .then(()=>{
       setLoading(false);
       navigate("/");
