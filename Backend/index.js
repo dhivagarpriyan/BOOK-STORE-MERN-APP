@@ -21,14 +21,14 @@ mongoose.connect(MONGO_URL)
 app.use(express.json());
 
 // middleware for cross-origin request
-app.use(cors());
+/*app.use(cors());*/
 
 // custom middleware for cors
-/*app.use(cors({
-    origin:"http://localhost:4000/",
+app.use(cors({
+    origin:"https://book-store-mern-app-tau.vercel.app",
     methods:["GET","POST","DELETE"],
     allowedHeaders:["content-type"]
-}))*/
+}));
 
 app.get("/test",(req,res)=>{
     res.json("passed")
