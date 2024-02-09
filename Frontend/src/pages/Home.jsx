@@ -13,7 +13,7 @@ const[books,setBooks]=useState([]);
 const[loading,setLoading]=useState(false);
 useEffect(()=>{
    setLoading(true);
-   axios.get("http://localhost:4000/books")
+   axios.get("http://https://book-store-mern-app-tau.vercel.app/books")
    .then((res)=>{
     setBooks(res.data.data)
     setLoading(false);
