@@ -12,7 +12,7 @@ const[loading,setLoading]=useState(false)
 
 const HandleDeleteBook=()=>{
    setLoading(true)
-   axios.delete(`http://localhost:4000/books/${id}`)
+   axios.delete(`http://https://book-store-mern-app-tau.vercel.app/books/${id}`)
    .then(()=>{
     setLoading(false)
     navigate("/")
