@@ -20,7 +20,7 @@ const CreateBook = () => {
       PublishYear
     };
     setLoading(true)
-    axios.post("http://https://book-store-mern-app-tau.vercel.app/books",data)
+    axios.post("https://book-store-mern-app-tau.vercel.app/books",data)
     .then(()=>{
       setLoading(false);
       navigate("/");
